@@ -1,4 +1,4 @@
-starttls-mitm is a mitm proxy that will transparently proxy and dump
+`starttls-mitm` is a mitm proxy that will transparently proxy and dump
 both plaintext and TLS traffic. It uses a user-provided keyfile and
 certificate file to impersonate remote servers. The user must
 explicitly instruct the device being man-in-the-middled to trust this
