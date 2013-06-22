@@ -6,3 +6,6 @@ certificate authority -- so this is not a security compromise.
 
 It starts out relaying in plaintext, peeking at each packet for a
 ClientHello header, at which point it converts the sockets to TLS.
+This makes it suitable for proxying protocols that use STARTTLS
+(plaintext handshake + SSL upgrade). It's only been tested on XMPP so
+far, but it should theoretically work for IMAP and others as well.
